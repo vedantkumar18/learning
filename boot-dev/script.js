@@ -125,3 +125,11 @@ const totalMessages = totalSentMessages + totalReceivedMessages;
 console.log("Total sent messages:", totalSentMessages);
 console.log("Total received messages:", totalReceivedMessages);
 console.log("Total messages:", totalMessages);
+
+// next lesson 
+
+const averageOpenRate = 0.23, displayMessage = `Tesla`;
+
+console.log("Average open rate:", averageOpenRate);
+console.log("Display message:", displayMessage);
+
