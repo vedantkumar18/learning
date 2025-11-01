@@ -227,8 +227,7 @@ const messageStatus = numRetries <= retryLimit  ? "processing" : "failed"
 
 console.log(messageStatus);
 
-/* ----------------------------------------------------
-  the below whole code is formatted in if else way and ternary operator way.
+the below whole code is formatted in if else way and ternary operator way.
 //truthy and flasy 
 
 const userCredits = 2;
@@ -238,8 +237,29 @@ if (userCredits > 0) {
 } else {
   console.log("Not enough credits.");
 }
--separated-
+------------------------------------------------
 const userCredits = 2;
 const usercredVaildation = userCredits > 0 ? `sending message....` :  `not enough credits`
 console.log(usercredVaildation);
-*/
+
+// nullish coalescing
+const name = "James Holden";
+const provider = "AT&T";
+const phoneNumber = "555-123-4567";
+const subscriptionType = null;
+
+// don't touch above this line
+
+console.log(
+  `Creating ${subscriptionType ?? "Guest"} Profile for ${name} with ${provider} at ${phoneNumber}.`,
+);
+
+// start of functions
+function concat(str1, str2) {
+  return str1 + str2;
+}
+
+console.log(concat("Lane,", " happy birthday!"));
+console.log(concat("Naomi,", " can you call me?"));
+console.log(concat("Juliette,", " where did you go?"));
+
