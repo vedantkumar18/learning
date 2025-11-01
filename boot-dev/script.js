@@ -133,3 +133,8 @@ const averageOpenRate = 0.23, displayMessage = `Tesla`;
 console.log("Average open rate:", averageOpenRate);
 console.log("Display message:", displayMessage);
 
+// About strings 
+const email = "stoob@gmail.com";
+console.log(email[0]);
+console.log(email[email.length - 1]);
+console.log(email);
